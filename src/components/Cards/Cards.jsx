@@ -23,6 +23,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             </Typography>
             <Typography color="textSecondary">
               {new Date(lastUpdate).toDateString()}
+              <br />{new Date(lastUpdate).toTimeString()}
             </Typography>
             <Typography variant="body2" component="p">
               Number of active cases of COVID-19.
@@ -39,6 +40,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             </Typography>
             <Typography color="textSecondary">
               {new Date(lastUpdate).toDateString()}
+              <br />{new Date(lastUpdate).toTimeString()}
             </Typography>
             <Typography variant="body2" component="p">
               Number of recoveries from COVID-19.
@@ -55,6 +57,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             </Typography>
             <Typography color="textSecondary">
               {new Date(lastUpdate).toDateString()}
+              <br />{new Date(lastUpdate).toTimeString()}
             </Typography>
             <Typography variant="body2" component="p">
               Number of deaths caused by COVID-19.
